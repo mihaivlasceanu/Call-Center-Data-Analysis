@@ -5088,8 +5088,11 @@ LIMIT 10
 ## Data Visualization
 
 **[Full, interactive dashboard on Tableau Public](link)**
+
 ![Call Center Tableau Dashboard Screenshot 1](images/call_center_tableau_1.png)
+
 ![Call Center Tableau Dashboard Screenshot 2](images/call_center_tableau_2.png)
+
 ![Call Center Tableau Dashboard Screenshot 3](images/call_center_tableau_3.png)
 
 
@@ -5097,8 +5100,11 @@ LIMIT 10
 **Power BI version:**
 
 ![Call Center PBI Dashboard Screenshot 1](images/call_center_pbi_1.png)
+
 ![Call Center PBI Dashboard Screenshot 2](images/call_center_pbi_2.png)
+
 ![Call Center PBI 	Dashboard Screenshot 3](images/call_center_pbi_3.png)
+
 ![Call Center PBI 	Dashboard Screenshot 4](images/call_center_pbi_4.png)
 
 ## Key Findings and Next Steps
