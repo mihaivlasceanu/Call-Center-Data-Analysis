@@ -1,6 +1,7 @@
 ﻿# Call Center Analysis
 
-**Data analysis project inspired by Tableau's Call Center Accelerator: https://exchange.tableau.com/en-gb/products/623?version=2021.2**
+**Data analysis project inspired by Tableau's Call Center Accelerator: 
+https://exchange.tableau.com/en-gb/products/623?version=2021.2**
 
 ## 📚  Table of Contents
 - 📄 [ Importing The Datasets (SQL)](https://github.com/mihaivlasceanu/Call-Center-Data-Analysis?tab=readme-ov-file#importing-the-datasets)
@@ -85,6 +86,7 @@ SELECT * FROM date_scaffolding
 | 2022-01-31 10:00:00 |
 | 2022-01-31 11:00:00 |
 | 2022-01-31 12:00:00 |
+
 Creating a cross table with dates and employee names only:
 
 ```sql
@@ -300,8 +302,8 @@ LIMIT 20
 ## Performance Overview
 
 **1.1 TIC - Total Incoming Calls**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-over-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH tic_cte AS (
 SELECT 
@@ -411,8 +413,8 @@ FROM tic_ytd_cte
 
 ---
 **2.1 Abandoned Calls**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-over-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH abandoned_cte AS (
 SELECT 
@@ -522,8 +524,8 @@ FROM abandoned_ytd_cte
 
 ---
 **3.1 FCR - First Contact Resolution**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-over-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH fcr_cte AS (
 SELECT 
@@ -633,8 +635,8 @@ FROM fcr_ytd_cte
 
 ---
 **4.1 Average Talk Time**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-over-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH talk_cte AS (
 SELECT 
@@ -744,8 +746,8 @@ FROM talk_ytd_cte
 
 ---
 **5.1 Average Wait Till Answer**
--- percent change vs previous month (MoM, Month-0ver-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-0ver-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH wait_cte AS (
 SELECT 
@@ -855,8 +857,8 @@ FROM wait_ytd_cte
 
 ---
 **6.1 CSAT - Customer Satisfaction Score**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent change vs same month, previous year (SMPY)
+- percent change vs previous month (MoM, Month-over-Month)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH csat_cte AS (
 SELECT 
@@ -2455,8 +2457,8 @@ OFFSET 102
 ## Customer Analysis
 
 **1.1 Answered Calls by Issue**
--- percent change vs previous month (MoM, Month-0ver-Month)
--- percent of total for the "current" month
+- percent change vs previous month (MoM, Month-0ver-Month)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason AS (
 SELECT 
@@ -2509,8 +2511,8 @@ LIMIT 20
 
 ---
 **1.2 Answered Calls by Issue**
--- percent change vs same month, previous year (SMPY)
--- percent of total for the "current" month
+- percent change vs same month, previous year (SMPY)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason AS (
 SELECT 
@@ -2629,8 +2631,8 @@ OFFSET 100
 
 ---
 **2.1 Answered Calls by Issue and by Customer**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent of total for the "current" month
+- percent change vs previous month (MoM, Month-over-Month)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason_and_customer AS (
 SELECT 
@@ -2710,8 +2712,8 @@ OFFSET 100
 | 2022 | 2     | Stiedemann Inc      | Technical Issues         | 5              |              |                | 9              | 55.56        |
 ---
 **2.2 Answered Calls by Issue and by Customer**
--- percent change vs same month, previous year (SMPY)
--- percent of total for the "current" month
+- percent change vs same month, previous year (SMPY)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason_and_customer AS (
 SELECT 
@@ -2883,8 +2885,8 @@ OFFSET 1000
 
 ---
 **3.1 Call Duration**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent of total for the "current" month
+- percent change vs previous month (MoM, Month-over-Month)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_duration AS (
 SELECT 
@@ -2942,8 +2944,8 @@ LIMIT 20
 
 ---
 **3.2 Call Duration**
--- percent change vs same month, previous year (SMPY)
--- percent of total for the "current" month
+- percent change vs same month, previous year (SMPY)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_duration AS (
 SELECT 
@@ -3072,8 +3074,8 @@ OFFSET 100
 
 ---
 **4.1 Call Duration by Customer**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent of total for the "current" month
+- percent change vs previous month (MoM, Month-over-Month)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_duration_and_customer AS (
 SELECT 
@@ -3171,8 +3173,8 @@ OFFSET 100
 
 ---
 **4.2 Call Duration by Customer**
--- percent change vs same month, previous year (SMPY)
--- percent of total for the "current" month
+- percent change vs same month, previous year (SMPY)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_duration_and_customer AS (
 SELECT 
@@ -3592,7 +3594,7 @@ OFFSET 200
 
 ---
 **6.1 Customers by CSAT**
--- percent change vs previous month (MoM, Month-Over-Month)
+- percent change vs previous month (MoM, Month-Over-Month)
 ```sql
 WITH customer_csat AS (
 SELECT
@@ -3667,7 +3669,7 @@ LIMIT 20
 
 ---
 **6.2 Customers by CSAT**
--- percent change vs same month, previous year (SMPY)
+- percent change vs same month, previous year (SMPY)
 ```sql
 WITH customer_csat AS (
 SELECT
@@ -4064,7 +4066,7 @@ OFFSET 200
 ## Agent Analysis
 
 **1.1 Agents by Answered Calls**
--- percent change vs previous month (MoM, Month-over-Month) + agent rank
+- percent change vs previous month (MoM, Month-over-Month) + agent rank
 ```sql
 WITH agent_answered AS (
 SELECT
@@ -4130,7 +4132,7 @@ OFFSET 200
 
 ---
 **1.2 Agents by Answered Calls**
--- percent change vs same month, previous year (SMPY) + agent rank
+- percent change vs same month, previous year (SMPY) + agent rank
 ```sql
 WITH agent_answered AS (
 SELECT
@@ -4271,7 +4273,7 @@ OFFSET 400
 
 ---
 **2.1 Agents by FCR %**
--- percent change vs previous month (MoM, Month-over-Month) + agent rank
+- percent change vs previous month (MoM, Month-over-Month) + agent rank
 ```sql
 WITH agent_fcr_pct AS (
 SELECT
@@ -4337,7 +4339,7 @@ OFFSET 400
 
 ---
 **2.2 Agents by FCR %**
--- percent change vs same month, previous year (SMPY) + agent rank
+- percent change vs same month, previous year (SMPY) + agent rank
 ```sql
 WITH agent_fcr_pct AS (
 SELECT
@@ -4478,7 +4480,7 @@ OFFSET 400
 
 ---
 **3.1 Agents by CSAT**
--- percent change vs previous month (MoM, Month-over-Month) + agent rank
+- percent change vs previous month (MoM, Month-over-Month) + agent rank
 ```sql
 WITH agent_csat AS (
 SELECT
@@ -4544,7 +4546,7 @@ OFFSET 400
 
 ---
 **3.2 Agents by CSAT**
--- percent change vs same month, previous year (SMPY) + agent rank
+- percent change vs same month, previous year (SMPY) + agent rank
 ```sql
 WITH agent_csat AS (
 SELECT
@@ -4685,8 +4687,8 @@ OFFSET 400
 
 ---
 **4.1 Answered Calls by Issue and by Agent**
--- percent change vs previous month (MoM, Month-over-Month)
--- percent of total for the "current" month
+- percent change vs previous month (MoM, Month-over-Month)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason_and_agent AS (
 SELECT 
@@ -4757,8 +4759,8 @@ OFFSET 1000
 
 ---
 **4.2 Answered Calls by Issue and by Agent**
--- percent change vs same month, previous year (SMPY)
--- percent of total for the "current" month
+- percent change vs same month, previous year (SMPY)
+- percent of total for the "current" month
 ```sql
 WITH answered_by_reason_and_agent AS (
 SELECT 
