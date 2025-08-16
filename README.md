@@ -5089,7 +5089,7 @@ LIMIT 10
 ---
 ## Data Visualization
 
-**[Full, interactive dashboard on Tableau Public](link)**
+**[Full, interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/mihai.vl.sceanu/viz/CallCenterDashboard_17123059689130/DashboardOverview)**
 
 ![Call Center Tableau Dashboard Screenshot 1](images/call_center_tableau_1.png)
 
